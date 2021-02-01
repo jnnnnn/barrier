@@ -8,19 +8,19 @@ and a [snap](https://snapcraft.io/barrier).
 
 ### Contact info:
 
-- `#barrier` on freenode
+-   `#barrier` on freenode
 
 #### CI Build Status
 
 Master branch overall build status: [![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)
 
-|Platform       |Build Status|
-|            --:|:--         |
-|Linux          |[![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Linux%20Build)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)|
-|Mac            |[![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Mac%20Build)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)|
-|Windows Debug  |[![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Windows%20Build&configuration=Windows%20Build%20Debug)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)|
-|Windows Release|[![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Windows%20Build&configuration=Windows%20Build%20Release%20with%20Release%20Installer)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)|
-|Snap           |[![Snap Status](https://build.snapcraft.io/badge/debauchee/barrier.svg)](https://build.snapcraft.io/user/debauchee/barrier)|
+|        Platform | Build Status                                                                                                                                                                                                                                                                                           |
+| --------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|           Linux | [![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Linux%20Build)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)                                                                        |
+|             Mac | [![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Mac%20Build)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)                                                                          |
+|   Windows Debug | [![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Windows%20Build&configuration=Windows%20Build%20Debug)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master)                                |
+| Windows Release | [![Build Status](https://dev.azure.com/debauchee/Barrier/_apis/build/status/debauchee.barrier?branchName=master&jobName=Windows%20Build&configuration=Windows%20Build%20Release%20with%20Release%20Installer)](https://dev.azure.com/debauchee/Barrier/_build/latest?definitionId=1&branchName=master) |
+|            Snap | [![Snap Status](https://build.snapcraft.io/badge/debauchee/barrier.svg)](https://build.snapcraft.io/user/debauchee/barrier)                                                                                                                                                                            |
 
 Our CI Builds are provided by Microsoft Azure Pipelines, Flathub, and Canonical.
 
@@ -47,9 +47,17 @@ Compatibility. We use more than one operating system and you probably do, too. W
 
 Communication. Everything we do is in the open. Our issue tracker will let you see if others are having the same problem you're having and will allow you to add additional information. You will also be able to see when progress is made and how the issue gets resolved.
 
+### Usage
+
+Install and run barrier on each machine that will be sharing. On the machine with the keyboard and mouse, make it the server. 
+
+Click the "Configure server" button and drag a new screen onto the grid for each client machine. Ensure the "screen name" matches exactly (case-sensitive) for each configured screen -- the clients' barrier windows will tell you their screen names (just above the server IP).
+
+On the client(s), put in the server machine's IP address (or use Bonjour/auto configuration when prompted) and "start" them. You should see `Barrier is running` on both server and clients. You should now be able to move the mouse between all the screens as if they were the same machine.
+
 ### Contact & support
 
-Please be aware that the *only* way to draw our attention to a bug is to create a new issue in [the issue tracker](https://github.com/debauchee/barrier/issues). Write a clear, concise, detailed report and you will get a clear, concise, detailed response. Priority is always given to issues that affect a wider range of users.
+Please be aware that the _only_ way to draw our attention to a bug is to create a new issue in [the issue tracker](https://github.com/debauchee/barrier/issues). Write a clear, concise, detailed report and you will get a clear, concise, detailed response. Priority is always given to issues that affect a wider range of users.
 
 For short and simple questions or to just say hello find us on the Freenode IRC network in the #barrier channel.
 
@@ -77,11 +85,12 @@ A: No
 Q: What OSes are supported?
 
 A:
-  - Windows 7, 8, 8.1, and 10
-  - MacOS/OS X
-  - Linux
-  - FreeBSD
-  - OpenBSD
+
+-   Windows 7, 8, 8.1, and 10
+-   MacOS/OS X
+-   Linux
+-   FreeBSD
+-   OpenBSD
 
 Q: Are 32-bit versions of Windows supported?
 
