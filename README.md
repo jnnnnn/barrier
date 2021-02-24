@@ -49,11 +49,13 @@ Communication. Everything we do is in the open. Our issue tracker will let you s
 
 ### Usage
 
-Install and run barrier on each machine that will be sharing. On the machine with the keyboard and mouse, make it the server. 
+Install and run barrier on each machine that will be sharing. On the machine with the keyboard and mouse, make it the server.
 
 Click the "Configure server" button and drag a new screen onto the grid for each client machine. Ensure the "screen name" matches exactly (case-sensitive) for each configured screen -- the clients' barrier windows will tell you their screen names (just above the server IP).
 
 On the client(s), put in the server machine's IP address (or use Bonjour/auto configuration when prompted) and "start" them. You should see `Barrier is running` on both server and clients. You should now be able to move the mouse between all the screens as if they were the same machine.
+
+Note that if the keyboard's Scroll Lock is active then this will prevent the mouse from switching screens.
 
 ### Contact & support
 
